@@ -11,6 +11,7 @@ npm i @capacitor/camera
 Equipo de trabajo:
 
 Pedro Rivera Lobos
+
 Ruben Ramirez Ross
 
 Sección: 003V
