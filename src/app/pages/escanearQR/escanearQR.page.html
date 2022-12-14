@@ -1,0 +1,46 @@
+<ion-header>
+  <!-- TOOLBAR -->
+  <ion-toolbar color="colortoolbar">
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()">
+        <ion-icon slot="start" name="menu-outline" color="primary"></ion-icon></ion-button>
+        <ion-back-button defaultHref="/" text="Volver" color="primary" mode="ios"></ion-back-button>
+      
+    </ion-buttons>
+    <ion-title>Escanear QR</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+
+
+      <ion-card-title class="titulo">
+        Alumno
+      </ion-card-title>
+
+      
+        <ion-buttons>
+        <div class="ion-padding">
+            
+            <ion-img src="assets/escanear.png"></ion-img><br>
+            <ion-button (click)="addPhotoToGallery()" fill="solid" shape="round" expand="full">Escanear QR</ion-button>
+            <ion-icon name="camera"></ion-icon>
+        </div>
+        
+      </ion-buttons>
+        
+      
+      
+
+      
+
+
+
+
+
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar color="colortoolbar">
+    <ion-title color="primary">Perfíl Alumno</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="start" name="menu-outline" color="primary"></ion-icon>
+      </ion-button>
+      <ion-back-button defaultHref="/" text="Volver" color="primary" mode="ios"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background no-scroll">
+
+  <ion-card>
+
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <ion-col *ngFor="let u of usuarios">
+          <ion-label>Nombre:</ion-label>
+          <ion-label> {{u.nomUsuario}}</ion-label>
+
+      </ion-col>
+      <!--<ion-label *ngFor="let u of usuarios">{{ u.correoUsuario }}</ion-label-->
+    </ion-item>
+  </ion-card>
+
+
+  <div class="padding-top">
+
+    <ion-card class="">
+
+      <ion-card-content class="ion-text-center">
+
+        <img class="logopadding" width="45%" src="assets/logo.png" alt="">
+        <br>
+        <br>
+        <div>
+          <b>
+            <p class="subtitulo"> ¡Bienvenido, Alumno! </p>
+          </b>
+          <br>
+          <br>
+          <b>
+            <p class="titulo"></p>
+          </b>
+        </div>
+
+
+        <div class="padding-boton">
+
+          <ion-button class="botonesinicio" routerLink="/escanearQR">
+            Escanear QR
+          </ion-button>
+
+        
+
+          <ion-button (click)="CerrarSesion()" color="danger">
+            Salir
+          </ion-button>
+
+
+
+          <!--<ion-content>
+                  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+                    <ion-fab-button (click)="addPhotoToGallery()">
+                      <ion-icon name="camera"></ion-icon>
+                    </ion-fab-button>
+                  </ion-fab>
+                </ion-content>!-->
+
+        </div>
+
+      </ion-card-content>
+
+    </ion-card>
+
+  </div>
+</ion-content>
